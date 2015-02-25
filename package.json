@@ -11,17 +11,23 @@
     "url": "git://github.com/spadin/simple-express-static-server.git"
   },
   "author": "Sandro Padin",
-  "contributors" : [ "Luca Capra" ],
+  "contributors": [
+    "Luca Capra"
+  ],
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/spadin/simple-express-static-server/issues"
   },
   "homepage": "https://github.com/spadin/simple-express-static-server",
   "dependencies": {
-    "express": "^4.1.2",
+    "adaro": "^2.0.0-1",
     "body-parser": "^1.1.2",
+    "dustjs-helpers": "^1.5.0",
+    "dustjs-linkedin": "^2.5.1",
     "errorhandler": "^1.0.1",
-    "method-override": "^1.0.0"
+    "express": "^4.1.2",
+    "method-override": "^1.0.0",
+    "poet": "^2.0.0"
   },
   "bin": {
     "simple-server": "./start.js"
