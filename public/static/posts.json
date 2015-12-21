@@ -1,0 +1,11 @@
+[
+  {
+    "id" : 1,
+    "slug" : "hello-world",
+    "title" : "Hi World",
+    "description" : "Salutation to the world",
+    "author" : {
+      "name" : "Sonia"
+    }
+  }
+]
