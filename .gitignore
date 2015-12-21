@@ -13,6 +13,9 @@ pids
 # Dependency directory
 node_modules/
 
+# Compiled CSS
+public/css/*.css
+
 # OS generated files #
 ######################
 .DS_Store
