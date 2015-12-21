@@ -17,9 +17,9 @@ var Header = React.createClass({
 
     render : function() {
         return (
-            <div className="header">
+            <header className="header">
                 <h1><a href="#" onClick={this.showAllPosts}>My Blog</a></h1>
-            </div>
+            </header>
         )
     }
 });
