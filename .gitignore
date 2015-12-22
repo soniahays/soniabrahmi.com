@@ -16,6 +16,9 @@ node_modules/
 # Compiled CSS
 public/css/*.css
 
+# Compiled JS
+public/scripts/react/bundle.js
+
 # OS generated files #
 ######################
 .DS_Store
