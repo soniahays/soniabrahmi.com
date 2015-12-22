@@ -33,7 +33,7 @@ var PostListView = React.createClass({
         });
         return (
             <main className="main">
-                {posts}
+                <section className="post-list">{posts}</section>
             </main>
         )
     }

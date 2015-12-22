@@ -13,7 +13,7 @@ body {
 }
 
 p {
-    line-height: 1.5;
+    line-height: 2em;
 }
 
 /* Variables
@@ -40,13 +40,11 @@ $divider-color: #B6B6B6;
 /* 
 ========================================================================== */
 .header {
-    display: block;
     position: absolute;
-    top: 0;
-    left: 0;
     height: 100%;
-    width: 400px;
-    border: 1px solid #ddd;
+    width: 25%;
+    min-width: 275px;
+    border-right: 1px solid #ddd;
 
     h1 {
         font-size: 20px;
@@ -56,9 +54,13 @@ $divider-color: #B6B6B6;
 }
 
 main {
-    position: absolute;
-    left: 415px;
-    max-width: 600px;
+    width: 75%;
+    float: right;
+}
+
+.full-post section, .post-list {
+    width: 680px;
+    margin: 5em auto 0;
 }
 
 .profile-img {
