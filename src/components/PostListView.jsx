@@ -32,9 +32,9 @@ var PostListView = React.createClass({
            )
         });
         return (
-            <div>
+            <main className="main">
                 {posts}
-            </div>
+            </main>
         )
     }
 });

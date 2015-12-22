@@ -1,27 +1,90 @@
 /* ===================================================================================================
    Global styles
    =================================================================================================== */
+@import 'normalize';
 
    /* Fonts
 ========================================================================== */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
 
 body {
     font-family: 'Open Sans', sans-serif;
 }
 
+p {
+    line-height: 1.5;
+}
+
 /* Variables
 ========================================================================== */
+
 /* Colors ===================== */
-$primary-color: #222933;
+$dark-primary-color: #512DA8;
+$primary-color: #673AB7;
+$light-primary-color: #D1C4E9;
+$text-icons: #FFF;
+$accent-color: #E040FB;
+$primary-text: #212121;
+$secondary-text: #727272;
+$divider-color: #B6B6B6;
 
+/* Other ===================== */
 
+/* Helper classes
+========================================================================== */
+.center {
+    text-align: center;
+}
+
+/* 
+========================================================================== */
 .header {
     display: block;
     position: absolute;
     top: 0;
     left: 0;
-    background: $primary-color;
     height: 100%;
     width: 400px;
+    border: 1px solid #ddd;
+
+    h1 {
+        font-size: 20px;
+        text-transform: uppercase;
+        color: $dark-primary-color;
+    }
+}
+
+main {
+    position: absolute;
+    left: 415px;
+    max-width: 600px;
+}
+
+.profile-img {
+    width: 170px;
+    height: 170px;
+    padding: 8px;
+    border: 7px solid $dark-primary-color;
+    border-radius: 100%;
+    overflow: hidden;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+.post-date,
+.author-name  {
+    color: $secondary-text;
+}
+
+.post-date {
+    text-transform: uppercase;
+}
+
+.post-title {
+    color: $dark-primary-color;
+    margin: 0.27em 0;
+}
+
+.author-details {
+    margin: 0 0 0.67em;
 }

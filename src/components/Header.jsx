@@ -18,7 +18,10 @@ var Header = React.createClass({
     render : function() {
         return (
             <header className="header">
-                <h1><a href="#" onClick={this.showAllPosts}>My Blog</a></h1>
+                <div className="center">
+                    <figure><a href="/" onClick={this.showAllPosts}><img className="profile-img" src="/images/avatar.jpg"/></a></figure>
+                    <h1>Sonia Brahmi</h1>
+                </div>
             </header>
         )
     }
