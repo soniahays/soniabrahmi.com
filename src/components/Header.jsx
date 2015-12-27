@@ -20,7 +20,14 @@ var Header = React.createClass({
             <header className="header">
                 <div className="center">
                     <figure><a href="/" onClick={this.showAllPosts}><img className="profile-img" src="/images/avatar.jpg"/></a></figure>
-                    <h1>Sonia Brahmi</h1>
+                    <h2>Sonia Brahmi</h2>
+                    <section>
+                        <ul>
+                            <li><a href="https://www.linkedin.com/in/soniabrahmi" target="_blank" className="btn"><img src="/images/social-icons.svg#svgView(viewBox(0, 0, 150, 150))" width="35"></img>View Linkedin</a></li>
+                            <li><a href="https://www.hackerrank.com/soniabrahmi" target="_blank" className="btn"><img src="/images/social-icons.svg#svgView(viewBox(0, 150, 150, 150))" width="35"></img> View Hackerrank</a></li>
+                            <li><a href="https://github.com/soniabrami" target="_blank" className="btn"><img src="/images/social-icons.svg#svgView(viewBox(150, 0, 150, 150))" width="35"></img>View Github</a></li>
+                        </ul>
+                    </section>
                 </div>
             </header>
         )

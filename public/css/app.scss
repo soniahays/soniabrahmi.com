@@ -3,7 +3,7 @@
    =================================================================================================== */
 @import 'normalize';
 
-   /* Fonts
+/* Fonts
 ========================================================================== */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
@@ -14,6 +14,26 @@ body {
 
 p {
     line-height: 2em;
+}
+
+/* 
+=========================== */
+html {
+    box-sizing: border-box;     
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+a { 
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 /* Variables
@@ -35,6 +55,19 @@ $divider-color: #B6B6B6;
 ========================================================================== */
 .center {
     text-align: center;
+}
+
+/* Buttons
+========================================================================== */
+.btn {
+    display: inline-block;
+    padding: 5px 5px;
+    background: #727272;
+    border-radius: 10px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    color: #fff;
 }
 
 /* 
