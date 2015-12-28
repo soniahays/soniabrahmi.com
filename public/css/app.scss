@@ -45,7 +45,8 @@ $primary-color: #673AB7;
 $light-primary-color: #D1C4E9;
 $text-icons: #FFF;
 $accent-color: #E040FB;
-$primary-text: #212121;
+$accent-text: #212121;
+$primary-text: #4D4D4D;
 $secondary-text: #727272;
 $divider-color: #B6B6B6;
 
@@ -59,16 +60,7 @@ $divider-color: #B6B6B6;
 
 /* Buttons
 ========================================================================== */
-.btn {
-    display: inline-block;
-    padding: 5px 5px;
-    background: #727272;
-    border-radius: 10px;
-    text-align: center;
-    vertical-align: middle;
-    cursor: pointer;
-    color: #fff;
-}
+
 
 /* 
 ========================================================================== */
@@ -77,12 +69,42 @@ $divider-color: #B6B6B6;
     height: 100%;
     width: 25%;
     min-width: 275px;
+    padding: .6em 2.5em;
     border-right: 1px solid #ddd;
 
-    h1 {
-        font-size: 20px;
+    h2 {
+        font-size: 1.5em;
         text-transform: uppercase;
         color: $dark-primary-color;
+    }
+}
+
+.social-container {
+    padding: 1em;
+    text-align: initial;
+}
+
+.social-link {
+    display: inline-block;
+    line-height: 35px;
+    border-radius: 100px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    color: $primary-color;
+    font-weight: 600;
+    margin-bottom: .4em;
+    transition-property: all;
+    transition-duration: 0.2s;
+
+    &:hover {
+        color: $secondary-text;
+    }
+
+    img {
+        float: left;
+        margin-right: 5px;
+        height: 35px;
     }
 }
 
@@ -92,7 +114,7 @@ main {
 }
 
 .full-post section, .post-list {
-    width: 680px;
+    width: 650px;
     margin: 5em auto 0;
 }
 
@@ -106,6 +128,10 @@ main {
     box-shadow: 0 1px 1px rgba(0,0,0,0.1);
 }
 
+.post-preview a {
+    color: $primary-text;
+}
+
 .post-date,
 .author-name  {
     color: $secondary-text;
@@ -115,9 +141,29 @@ main {
     text-transform: uppercase;
 }
 
+.post-category {
+    color: $primary-color;
+    text-transform: uppercase; 
+    font-size: 1em;
+    font-weight: 900;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
 .post-title {
-    color: $dark-primary-color;
+    font-size: 2.5em;
+    line-height: 35px;
+    margin-bottom: 15px;
+    margin-top: 0;
+    font-weight: bold;
+    color: $accent-text;
     margin: 0.27em 0;
+    transition-property: all;
+    transition-duration: 0.2s;
+
+    &:hover {
+        color: $primary-color;
+    }
 }
 
 .author-details {
