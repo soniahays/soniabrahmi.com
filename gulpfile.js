@@ -5,7 +5,9 @@ var gulp = require('gulp'),
     reactify = require('reactify'),
     sass = require('gulp-sass'),
     package = require('./package.json'),
-    nodemon = require('nodemon');
+    nodemon = require('nodemon'),
+    render = require('./render.js');
+
 
 gulp.task('bundle', function() {
     return browserify(package.paths.app)
@@ -24,6 +26,11 @@ gulp.task('sass', function() {
 gulp.task('watch', function () {
     gulp.watch(['src/**/*.js', 'src/**/*.jsx'],['bundle']);
   	gulp.watch('public/css/*.scss', ['sass']);
+  	gulp.watch('public/static/*.md', ['render']);
+});
+
+gulp.task('render', function() {
+  render();
 });
 
 gulp.task('nodemon', function () {
